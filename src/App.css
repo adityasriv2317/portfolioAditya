@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+html{
+  background-color: rgb(121, 121, 121);
+  margin: 0;
+  padding: 0;
+
+  font-family: "Playwrite GB S", cursive;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  
+  padding: 1vh 5vw;
+  background-color: #91b1e0;
+  backdrop-filter: blur(10);
+
   color: white;
+  position: fixed;
+  width: 92%;
+  top: 0;
+  z-index: 1000;
 }
 
-.App-link {
-  color: #61dafb;
+.logo{
+  font-size: 2em;
+  font-family: 'Merienda', cursive;
+  text-shadow: 0 0 10px beige;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo .bracket{
+  color: blue;
+}
+
+.navlinks{
+  display: flex;
+  font-size: 1.3em;
+}
+
+.navlinks ul{
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.navlinks li{
+  margin: 0 15px;
+}
+
+.navlinks a{
+  color: white;
+  text-decoration: none;
+}
+
+.menu{
+  font-size: 1em;
+  cursor: pointer;
+  display: none;
 }
